@@ -58,9 +58,38 @@ Batch Size: 16
 
 Validation Split: 15% (stratified by class)
 
+5. Training Performance
+
 | Epoch | Accuracy | Loss | Val Accuracy | Val Loss |
 | ----- | -------- | ---- | ------------ | -------- |
 | 1     | 0.46     | 1.10 | 0.33         | 1.09     |
 | 25    | 0.87     | 0.32 | 0.71         | 0.77     |
 | 50    | 0.95     | 0.13 | 0.75         | 0.76     |
 | 80    | 1.00     | 0.00 | 0.87         | 0.37     |
+
+6. Evaluation Metrics
+Test Accuracy: 86.78%
+
+Evaluation Notes:
+
+Labels are based only on the anchor
+
+Metrics computed: Accuracy, Precision, Recall, F1-score
+
+markdown
+Copy
+Edit
+              precision    recall  f1-score   support
+
+          AD       0.89      0.85      0.87       587
+          CN       0.87      0.85      0.86       604
+         MCI       0.84      0.91      0.87       609
+
+    accuracy                           0.87      1800
+   macro avg       0.87      0.87      0.87      1800
+weighted avg       0.87      0.87      0.87      1800
+Visualizations:
+
+ROC Curves (per class)
+
+Precision-Recall Curves
